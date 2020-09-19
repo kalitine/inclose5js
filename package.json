@@ -1,0 +1,39 @@
+{
+  "name": "inclose5js",
+  "version": "1.0.0",
+  "description": "Inclose5 algorithm exported as a NodeJS native module",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "compile": "node-gyp configure & node-gyp build",
+    "test": "node test/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalitine/inclose5js.git"
+  },
+  "keywords": [
+    "inclose5",
+    "fca",
+    "lattice",
+    "nodejs",
+    "native",
+    "module"
+  ],
+  "author": "Philippe Kalitine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalitine/inclose5js/issues"
+  },
+  "homepage": "https://github.com/kalitine/inclose5js#readme",
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^3.0.2"
+  },
+  "devDependencies": {
+    "node-gyp": "^7.1.0"
+  }
+}
