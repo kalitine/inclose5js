@@ -1,0 +1,3 @@
+[submodule "lib/inclose5"]
+	path = lib/inclose5
+	url = https://github.com/kalitine/inclose5.git
