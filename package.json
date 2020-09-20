@@ -7,7 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "compile": "node-gyp configure & node-gyp build",
+    "precompile": "rm -rf build",
+    "compile": "node-gyp configure && node-gyp build",
+    "pretest": "npm run compile",
     "test": "node test/index.test.js"
   },
   "repository": {

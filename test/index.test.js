@@ -1,3 +1,5 @@
-const addon = require('../src/index.js')
+const inclose5 = require('../src/index.js')
 
-console.log(addon.inclose5())
+const dataset = new Uint8Array([0,0,0,1,1,1,0,0,0,1,1,1,0,1,1,0,0,0,0,1,1,0,0,0])
+const duration = inclose5.run(dataset.buffer, 4, 6)
+console.log(`Algorithm run time = ${duration} seconds`)
