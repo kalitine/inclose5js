@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Inclose5 algorithm exported as a NodeJS native module",
   "main": "src/index.js",
+  "files": [
+    "build",
+    "lib",
+    "src",
+    "binding.gyp"
+  ],
   "directories": {
     "lib": "lib"
   },
@@ -10,7 +16,8 @@
     "precompile": "rm -rf build",
     "compile": "node-gyp configure && node-gyp build",
     "pretest": "npm run compile",
-    "test": "node test/index.test.js"
+    "test": "node test/index.test.js",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -36,6 +43,7 @@
     "node-addon-api": "^3.0.2"
   },
   "devDependencies": {
-    "node-gyp": "^7.1.0"
+    "node-gyp": "^7.1.0",
+    "standard-version": "^9.0.0"
   }
 }
